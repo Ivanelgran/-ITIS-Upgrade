@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<html>
+<head>
+	<title>Генератор отчетов</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<link href="https://getbootstrap.com/docs/3.3/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+	<script src="{{ url_for('static', filename='js/form1.js') }}"></script>
+</head>
+<body>
+ <div class="container">
+        <div class="header">
+            <nav>
+                <ul class="nav nav-pills pull-right">
+                    <li role="presentation"><a href="form">Отчет №1</a>
+                    </li>
+                    <li role="presentation" class="active"><a href="#">Отчет №2</a>
+                    </li>
+                    <li role="presentation"><a href="form2">Отчет №3</a>
+                    </li>
+                </ul>
+            </nav>
+            <h3 class="text-muted">Генератор отчетов</h3>
+        </div>
+ 
+        <div class="jumbotron">
+            <h1>СТРАНные предпочтения</h1>
+			<h3>Посетители из какой страны чаще всего интересуются товарами из определенных категорий?</h3>
+			<form class="form-inline">
+	<br><br>
+	<form class="form-inline">
+	<!--  <div class="form-group">
+	    <label class="sr-only" for="emailInput">Категория товара</label>
+	    <input type="text" class="form-control" id="emailInput" placeholder="Введите категорию товара">
+	  </div>
+	  -->
+	
+	   <div class="form-group"> 
+	   <h4>Выберите категорию товара из списка :)</h4> 
+	   <br>
+    <label for="exampleFormControlSelect1"></label>
+    <select class="form-control" id="category">
+      <option>fresh_fish</option>
+      <option>canned_food</option>
+      <option>semi_manufactures</option>
+      <option>caviar</option>
+      <option>frozen_fish</option>
+    </select>
+  </div>
+	 <br><br><br>
+	  <button type="submit" class="btn btn-primary">Генерировать</button>
+	</form>
+	<br>
+	<div id="successAlert" class="alert alert-success" role="alert" style="display:none;"></div>
+	<div id="errorAlert" class="alert alert-danger" role="alert" style="display:none;"></div>
+</div>
+</body>
+</html>

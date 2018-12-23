@@ -4,3 +4,5 @@
  Парсер логов parser.py: python, PyMySql
  
  Веб приложение process.py: python, flask, MySqlDB, jQuery AJAX.
+
+ База данных MySQL - /MySqlDB

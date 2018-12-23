@@ -5,4 +5,5 @@
  
  Веб приложение process.py: python, flask, MySqlDB, jQuery AJAX.
 
- База данных MySQL - /MySqlDB
+ База данных MySQL - /MySqlDB - Еще загружается :)
+
